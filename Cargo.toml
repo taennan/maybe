@@ -1,0 +1,15 @@
+[package]
+name = "maybe"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+serde = ["dep:serde"]
+async_graphql = ["dep:async-graphql"]
+
+[dependencies]
+async-graphql = { version = "7.0.13", optional = true }
+serde = { version = "1.0.216", features = ["derive"], optional = true }
+
+[dev-dependencies]
+serde_json = { version = "1.0.133" }
